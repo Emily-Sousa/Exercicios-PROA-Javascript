@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //12. Faça um programa que leia 10 números informados pelo usuário e ao final da leitura escrever a soma total dos 10 números lidos.
+        
+        var contador = 1;
+        var soma = 0;
+        var numero = "";
+
+        while (contador <= 10){
+         numero = parseFloat(prompt(`Digite o ${contador} o número`));
+
+         soma = soma + numero; 
+         contador = contador + 1;
+
+         document.write(`${numero} " "`);
+        } 
+
+        document.write(`A soma dos números é: ${soma} <br>`);
+
+    </script>
+</body>
+</html>
